@@ -19,5 +19,8 @@ def RetireLettres(phrase1,phrase2):
 		d1[char]-=d2[char]
 	return d1
 	
-def AnagrammeExact(phrase1,phrase2):
+def IsAnagrammeExact(phrase1,phrase2):
 	return ReorganisationAlphabetique(phrase1)==ReorganisationAlphabetique(phrase2)
+
+def IsPalindromeExact(phrase1,phrase2):
+	return phrase1==phrase2[::-1]
